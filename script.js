@@ -75,4 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
       openLightbox(e.currentTarget.src, e.currentTarget.alt);
     });
   });
+  // Tabs behavior: Projects first, Services next
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const target = document.querySelector(btn.dataset.target);
+      if (target) target.classList.add('active');
+    });
+  });
 });

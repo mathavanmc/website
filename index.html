@@ -10,10 +10,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -42,7 +39,10 @@
           <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#contact" class="btn btn-primary">Request Quote</a>
+        <div class="header-ctas">
+          <a href="tel:+919626097474" class="btn btn-primary"><i class="fa-solid fa-phone"></i>&nbsp;9626097474</a>
+          <a href="https://wa.me/919626097474" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i>&nbsp;WhatsApp</a>
+        </div>
         <button class="nav-toggle" aria-label="Open menu">
           <span></span>
           <span></span>
@@ -64,7 +64,7 @@
             </p>
             <div class="hero-actions">
               <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#services" class="btn btn-secondary">Our Services</a>
+              <a href="#contact" class="btn btn-secondary">Contact Us</a>
             </div>
             <ul class="hero-meta">
               <li><strong>15+</strong> Years Experience</li>
@@ -233,6 +233,41 @@
         </div>
       </section>
 
+      <section id="gallery" class="section gallery">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Gallery</p>
+            <h2>Our Work — Site Gallery</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="images/project1.svg" alt="Project 1" />
+              <div class="project-info">
+                <span>Commercial</span>
+                <h3>Site Work 1</h3>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/project2.svg" alt="Project 2" />
+              <div class="project-info">
+                <span>Residential</span>
+                <h3>Site Work 2</h3>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/project3.svg" alt="Project 3" />
+              <div class="project-info">
+                <span>Infrastructure</span>
+                <h3>Site Work 3</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="process" class="section process">
         <div class="container">
           <div class="section-heading">
@@ -294,9 +329,10 @@
               Tell us about your construction needs and we will get back to you with a plan and quote.
             </p>
             <ul class="contact-details">
-              <li><i class="fa-solid fa-phone"></i> 9626097474</li>
-              <li><i class="fa-solid fa-envelope"></i> santhoshsekar28@gmail.com</li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+919626097474">9626097474</a></li>
+              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:santhoshsekar28@gmail.com">santhoshsekar28@gmail.com</a></li>
               <li><i class="fa-solid fa-location-dot"></i> Chennai, India</li>
+              <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919626097474" target="_blank">WhatsApp us</a></li>
             </ul>
           </div>
 
@@ -337,14 +373,14 @@
       <div class="container footer-inner">
         <div>
           <a href="#home" class="brand footer-brand">
-            <span class="brand-mark">BC</span>
+            <span class="brand-mark">CC</span>
             <span>
-              <strong>BuildCore</strong>
+              <strong>Cauvery Construction</strong>
               <small>Civil Construction</small>
             </span>
           </a>
         </div>
-        <p>© <span id="year"></span> BuildCore Civil Construction. All rights reserved.</p>
+        <p>© <span id="year"></span> Cauvery Construction. All rights reserved.</p>
         <div class="social-links">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>

@@ -208,6 +208,11 @@ p {
   padding: 4px;
 }
 
+/* Hide any remaining textual brand mark (legacy) so the image logo is shown */
+.brand-mark {
+  display: none !important;
+}
+
 .main-nav {
   display: flex;
   align-items: center;

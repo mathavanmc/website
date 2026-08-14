@@ -234,14 +234,16 @@ p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 2rem;
-  padding: 110px 0 90px;
+  gap: 1.25rem;
+  padding: 90px 0;
+  justify-items: center;
 }
 
 .hero-copy {
-  max-width: 650px;
+  max-width: 900px;
+  text-align: center;
 }
 
 .hero-copy .lead {
@@ -274,11 +276,7 @@ p {
 }
 
 .hero-card {
-  background: rgba(15, 23, 42, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 26px;
-  padding: 2rem;
-  box-shadow: var(--shadow);
+  display: none; /* hidden since we removed the card from markup */
 }
 
 .card-top {

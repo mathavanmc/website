@@ -85,4 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) target.classList.add('active');
     });
   });
+  // When nav link to #projects is clicked, ensure Projects tab is active
+  document.querySelectorAll('.main-nav a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href === '#projects') {
+        const projectsBtn = document.querySelector('.tab-btn[data-target="#projects"]');
+        if (projectsBtn) projectsBtn.click();
+      }
+    });
+  });
 });

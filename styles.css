@@ -502,6 +502,58 @@ p {
   object-fit: cover;
 }
 
+.project-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.lightbox-overlay img {
+  max-width: 96%;
+  max-height: 92%;
+  border-radius: 12px;
+  box-shadow: 0 30px 80px rgba(2,6,23,0.6);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1001;
+  cursor: pointer;
+  font-weight: 700;
+}
+
 .project-info {
   padding: 1.3rem 1.2rem 1.7rem;
 }

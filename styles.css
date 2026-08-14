@@ -199,6 +199,15 @@ p {
   font-weight: 800;
 }
 
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 4px;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
